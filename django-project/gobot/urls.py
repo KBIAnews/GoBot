@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from links.views import LinkDetailView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'(?P<slug>[\w-]+)/$', LinkDetailView.as_view(), name='link'),
 ]
 
 admin.site.site_header = 'GoBot Admin'
