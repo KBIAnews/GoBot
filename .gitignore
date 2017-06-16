@@ -121,3 +121,7 @@ django-project/static/css/styles.css
 # Collected Static Files
 django-project/static/*.css
 django-project/static/*.png
+
+
+# Zappa Configuration
+zappa_settings.json

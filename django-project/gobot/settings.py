@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['KBIA_BAKERIES_SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -131,7 +131,7 @@ STATIC_URL = '/static/'
 # File Storage.
 # https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_STORAGE_BUCKET_NAME = 'media.kbia.org'
 AWS_LOCATION = 'kbia-gobot'
 AWS_ACCESS_KEY_ID = os.getenv('KBIA_BAKERIES_AWS_ID')
