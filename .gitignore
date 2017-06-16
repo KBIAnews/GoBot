@@ -99,3 +99,25 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Built Components Folder
+components-build
+
+# Sass Cache
+.sass-cache
+
+# Ideastorm IDE files
+.idea
+
+# Django Bakery Bake Directory
+baked
+
+# Django Admin Static Files
+django-project/static/admin
+
+# Built Sass Stylesheets
+django-project/static/css/styles.css
+
+# Collected Static Files
+django-project/static/*.css
+django-project/static/*.png
